@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import TodoList from './Todolist';
+import Clock from './Timer';
 
 {/*
   작성자 : 김재우
@@ -14,11 +15,8 @@ function App() {
   
   return (
     <div className="container">
-      <h1 className = "test">Hello,
-        {
-          name === '리액트' ? (<h1>yes</h1>): null
-        } !!</h1>
-      <p>반갑습니다.</p>
+      <TodoList></TodoList>
+      <Clock></Clock>
     </div>
   );
   //const port = undefined;
